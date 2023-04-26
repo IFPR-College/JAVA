@@ -1,3 +1,14 @@
+#Atividade 05 
+
+1 - Setei as variáveis de gastos mensais(jan, fev e mar)
+
+2 - Criei a variável "gastosTrimestre" para juntar todos os gastos
+
+3 - Criei a variável "mediaMensal" para tirar a média, no caso a soma de todos os meses de gastos divido pela quantidade de meses somados 
+
+4 - Printei na tela a média
+
+~~~java
 package Atv05;
 
 public class Atv05 {
@@ -13,3 +24,5 @@ public class Atv05 {
     }
 
 }
+
+~~~
