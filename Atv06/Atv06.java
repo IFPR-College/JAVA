@@ -14,7 +14,7 @@ public class Atv06 {
         float saldoatual = 0;
         while (saldoatual < montante) {
             saldo += depositoFM;
-            saldo *= 0.5;
+            saldo *= 0.005;
             saldoatual += saldo; 
             meses++;
         }

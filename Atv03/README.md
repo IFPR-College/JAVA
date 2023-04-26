@@ -1,3 +1,61 @@
 # Usando a classe JOptionPane para entrada de dados, crie uma classe que receba a nota de duas provas e de um trabalho. Calcule e mostre a média.
 
-1 - Utilizei metodos diferentes para tratar cada um dos resultados das atividades e o metodo principal é utilizao para obter a nota
+1 - Utilizei metodos diferentes para tratar cada um dos resultados das atividades e o metodo principal é utilizado para obter a nota
+
+2 - Para obter a média somei todas as notas e dividi pela quantidade de atividades realizada
+
+~~~java
+package Atv03;
+
+import javax.swing.JOptionPane;
+
+public class Atv03 {
+    public static void main(String[] args) {
+        Integer resp1 = prova1();
+        Integer resp2 = prova2();
+        Integer trabalho = trabalho();
+
+        int media = (resp1 + resp2 + trabalho) / 3;
+        JOptionPane.showMessageDialog(null, "Sua média é: " + media, "Média final!", 1);
+
+    };
+
+    public static Integer prova1() {
+        while (true) {
+            String resp1 = JOptionPane.showInputDialog(null, "Qual a nota da primeira prova ?", null);
+            if (Integer.valueOf(resp1) > 100) {
+                JOptionPane.showMessageDialog(null, "Nota inválida", "Erro", 0);
+
+            } else {
+                return Integer.valueOf(resp1);
+            }
+        }
+
+    };
+
+    public static Integer prova2() {
+        while (true) {
+            String resp2 = JOptionPane.showInputDialog(null, "Qual a nota da segunda prova ?", null);
+            if (Integer.valueOf(resp2) > 100) {
+                JOptionPane.showMessageDialog(null, "Nota inválida", "Erro", 0);
+            } else {
+                return Integer.valueOf(resp2);
+
+            }
+        }
+    };
+
+    public static Integer trabalho() {
+        while (true) {
+            String trab = JOptionPane.showInputDialog(null, "Qual a nota do trabalho ?", null);
+            if (Integer.valueOf(trab) > 100) {
+                JOptionPane.showMessageDialog(null, "Nota inválida", "Erro", 0);
+            } else {
+                return Integer.valueOf(trab);
+
+            }
+        }
+    };
+}
+
+~~~
