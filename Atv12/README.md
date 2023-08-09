@@ -1,0 +1,2 @@
+- Nessa atividade foi realizado operações com Herança, onde cada um era filho de Pessoa.java e iam extendo
+- Em alguns casos foram extendidos os filhos de Pessoa.java por exemplo pro Funcionario foi extendido a PessoaFisica que extende Pessoa
